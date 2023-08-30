@@ -1,0 +1,15 @@
+#accordian-resizer {
+  width: 500px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 0px;
+}
+h1 {
+  font-size: 2.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  #accordian-resizer {
+    width: 300px;
+  }
+}

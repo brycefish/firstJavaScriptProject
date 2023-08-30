@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Boilerplate page to use for future pages -->
+
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:  Bryce Fish
+#Date Created:  01/27/2023
+#Version:  0.0
+#Date Last Modified:  01/28/2023
+#Modified by:  Bryce Fish
+#Modification log:  
+
+    Version 0.0 - 01/27/2023 - Mod Log and Skeleton HTML created. Created Files and Folders.
+    Version 0.1 - 01/28/2023 - Coverted desktop skeleton draft to a mobile first draft
+    Version 0.2 - 01/29/2023 - Added color scheme and set up flex boxes 
+    Version 0.3 - 01/30/2023 - Finalized mobile-first layout.  Added in 2 images from pixabay.com.  Added custom font to company name(h1) and touched up other aspects of the text. Footer updated with working(but fake) links to location and email.
+    Version 0.4 - 02/24/2023 - Cleaned-up HTML formatting issues,  Added lorem ipsum to <p> elements and appropriote text to elements (Automatic lint remover is a great idea until it targets your belly button)
+    Version 0.5 - 02/26/2023 - Fixed navbar CSS for mobile.
+    Version 0.6 - 03/03/2023 - Fixed the mess I made when renaming the navbar image file.  Added missing links to images in the carousel, and change script links to skeleton bxSlider plug-in. Need to format aesthetically.
+                             - Started Conversion of FAQ to accordian. 
+    Version 0.7 - 03/04/2023 - Start of migrated modlog from index.html. 
+                             - Fixed the html errors for accordian widget in faq.html, began basic styling on #accordian-resizer
+                             - Added order.hmtl file and associated links for each page.  Tested Links for each page.
+                             - Deleted unused JS/CSS/image files
+    Version 0.8 - 03/05/2023 - Began construction of ACTUAL mobile menu.  Added a menu page
+                             
+    Version 0.9 - 03/06/2023 - Rearranged elements within the header of boiler-plate. Cleaned up mobile menu drop down JavaScript.
+                             - Added "close" li and JS click event to close dropdown list.
+    Version 1.0 - 03/07/2023 - Migrated boilerplate changes to all pages.  
+                             - Deleted or consolidated excess JS/CSS files. 
+                             - Replaced mobile menu button when a "hamburger menu" svg.
+                             - added border styling for Navbar
+    Version 1.1 - 03/08/2023 - Replaced "close" button with an svg "x"
+                             - Removed margin between ul and main.
+    Version 1.2 - 03/10/2023 - Replaced About Page with a Catering page with Jquiry UI a Tabs and DatePicker Widgets
+                             - Moved bxSlider from homepage to the order now page.
+                             - Added Regex to Contact Page
+                             - Resized Widgets for mobile view
+
+------------------------------------------------------------------------------------------------------------------>
+<head>
+    <title>Boiler-Plate</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Hot Sauce Store located in Boise Idaho" />
+    <meta name="author" content="Bryce Fish" />
+    <meta name="keywords" content="hot-sauce food-truck local wings tacos spicy fast-food food restaurant"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/boiler.css" />
+  </head>
+    <!--
+      -rename
+      -topNameBar => title-bar
+      -hotHeadsTextLogo => title-text
+      -->
+  <body>
+    <header>
+      <div class="topNameBar">
+        <image src="media/pepper-small.png" alt="image of small red chili pepper">
+          <h1 class="hotHeadsTextLogo"><a href="index.html" id="nameLink">Hot Sauce Heads</a></h1>
+      </div>
+      <!--NavBar Section-->
+      <section>
+        <nav>
+          <div><!--Put navbar class in div?-->
+            <ul class="navbar">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catering.html">Catering</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="menu.html">Menu</a></li>
+            </ul>
+          </div>
+          <div class="mobileNavBar" id="hide-me">
+            <ul>
+              <li id="chili-logi-list-item"><img src="media/pepper-small.png"id="mobileChiliLogo"alt="image of small red chili pepper"/></li>
+              <li><a id="mobile-menu-click">                
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect></svg></a></li>
+            </ul>
+          </div>
+          <div id="drop-down-items" style="display: none;">
+            <ul>
+              <li id="menu-close">
+                <svg width="20" height="20" viewBox="0 0 20 20" overflow="visible" stroke="black" stroke-width="4" stroke-linecap="round">
+                  <line x2="20" y2="20" />
+                  <line x1="20" y2="20" />
+               </svg>
+              </li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catering.html">Catering</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="menu.html">Menu</a></li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+    </header>  
+      <main>
+        <h2>Boiler-Plate</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        </p>
+      </main>
+  
+      <!---------------Footer------------------>
+      <footer>
+        <address>
+          <ul>
+            <li>Locate us at<a href="https://www.google.com/maps" target="_blank"><strong>Pintail Building</strong></a>near Maple Grove and Overland</li>
+            <li>Contact us at<strong><a href="mailto:fakeemail@email.com"> fakeEmail.com</a></strong></li>
+          </ul>
+        </address>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="javascript/main.js"></script>
+    </body>
+  </html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Menu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Hot Sauce Store located in Boise Idaho" />
+    <meta name="author" content="Bryce Fish" />
+    <meta name="keywords" content="hot-sauce food-truck local wings tacos spicy fast-food food restaurant"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"/>
+  </head>
+
+  <body>
+    <header>
+      <div class="topNameBar">
+        <image src="media/pepper-small.png" alt="image of small red chili pepper">
+          <h1 class="hotHeadsTextLogo"><a href="index.html" id="nameLink">Hot Sauce Heads</a></h1>
+      </div>
+      <!--NavBar Section-->
+      <section>
+        <nav>
+          <div><!--Put navbar class in div?-->
+            <ul class="navbar">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catering.html">Catering</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="menu.html">Menu</a></li>
+            </ul>
+          </div>
+          <div class="mobileNavBar" id="hide-me">
+            <ul>
+              <li id="chili-logi-list-item"><img src="media/pepper-small.png"id="mobileChiliLogo"alt="image of small red chili pepper"/></li>
+              <li><a id="mobile-menu-click">                
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect></svg></a></li>
+            </ul>
+          </div>
+          <div id="drop-down-items" style="display: none;">
+            <ul>
+              <li id="menu-close">
+                <svg width="20" height="20" viewBox="0 0 20 20" overflow="visible" stroke="black" stroke-width="4" stroke-linecap="round">
+                  <line x2="20" y2="20" />
+                  <line x1="20" y2="20" />
+               </svg>
+              </li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catering.html">Catering</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="menu.html">Menu</a></li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+    </header>  
+  <!-------Main-------->
+  <main>
+    <h2>Featured Items</h2>
+    <div id=bx-container>
+        <ul id="slider">
+          <li><img src="media/featured-1-hot-wings.jpg" alt="traditional hot wings" ></li>
+          <li><img src="media/featured-2-sandwich.jpg" alt="signature chicken sandwich" ></li>
+          <li><img src="media/featured-3-burger-guac.jpg" alt="a hamburger with guacamole"></a></li>
+          <li><img src="media/featured-4-burger-purple.jpg" alt="burger with purple sauce" ></li>
+        </ul>
+    </div>
+  </main>
+  
+      <!---------------Footer------------------>
+      <footer>
+        <address>
+          <ul>
+            <li>Locate us at<a href="https://www.google.com/maps" target="_blank"><strong>Pintail Building</strong></a>near Maple Grove and Overland</li>
+            <li>Contact us at<strong><a href="mailto:fakeemail@email.com"> fakeEmail.com</a></strong></li>
+          </ul>
+        </address>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <!-- Script from vanilla jQuery carousel-->
+      <!--<script src="javascript/index.js"></script>-->
+      <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+      <!-- Call to the bxSlider function -->
+      <script>
+        $(document).ready(() =>
+          $("#slider").bxSlider({
+            auto: true,
+            autoControls: true,
+            captions: true,
+            minSlides: 1,
+            maxSlides: 1,
+            slideWidth: 600,
+            touchEnabled: true,
+            slideMargin: 0
+          })
+        );
+      </script>
+        <script src="javascript/main.js"></script>
+    </body>
+  </html>

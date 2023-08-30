@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FAQ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Hot Sauce Store located in Boise Idaho">
+    <meta name="author" content="Bryce Fish" />
+    <meta name="keywords" content="hot-sauce food-truck local wings tacos spicy fast-food food restaurant">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/faq.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="topNameBar">
+        <image src="media/pepper-small.png" alt="image of small red chili pepper">
+          <h1 class="hotHeadsTextLogo"><a href="index.html" id="nameLink">Hot Sauce Heads</a></h1>
+      </div>
+      <!--NavBar Section-->
+      <section>
+        <nav>
+          <div><!--Put navbar class in div?-->
+            <ul class="navbar">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catering.html">Catering</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="menu.html">Menu</a></li>
+            </ul>
+          </div>
+          <div class="mobileNavBar" id="hide-me">
+            <ul>
+              <li id="chili-logi-list-item"><img src="media/pepper-small.png"id="mobileChiliLogo"alt="image of small red chili pepper"/></li>
+              <li><a id="mobile-menu-click">                
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect></svg></a></li>
+            </ul>
+          </div>
+          <div id="drop-down-items" style="display: none;">
+            <ul>
+              <li id="menu-close">
+                <svg width="20" height="20" viewBox="0 0 20 20" overflow="visible" stroke="black" stroke-width="4" stroke-linecap="round">
+                  <line x2="20" y2="20" />
+                  <line x1="20" y2="20" />
+               </svg>
+              </li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="catering.html">Catering</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="menu.html">Menu</a></li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+    </header>  
+      <!--FAQ Section-->
+    <main>
+      <h1>FAQ</h1>
+      <div id="accordian-resizer">
+      <div id="accordion">
+        <h3>Do you serve non-spicy food?</h3>
+        <div>
+            <p>Yes! We have food for everyone.  And we won't try to trick you.</p>
+        </div>
+    <h3>What time are you open?</h3>
+        <div>
+            <p>We are open from 11am-11pm everyday.</p>
+        </div>
+    <h3>Do you deliver?</h3>
+        <div>
+            <p>We use the DoorDash for all our deliveries</p>
+        </div>
+      </div> <!--End # accordian-->
+    </div>
+</main>
+
+
+<footer>
+  <address>
+    <ul>
+      <li>Locate us at<a href="https://www.google.com/maps" target="_blank"><strong>Pintail Building</strong></a>near Maple Grove and Overland</li>
+      <li>Contact us at<strong><a href="mailto:fakeemail@email.com"> fakeEmail.com</a></strong></li>
+    </ul>
+  </address>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="javascript/main.js"></script>
+  <script>
+      $( function() {
+        $("#accordion").accordion({
+          collapsible: true,
+          active: false
+        });
+      } );
+      </script>
+  </body>
+</html>
